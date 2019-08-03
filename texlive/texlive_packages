@@ -10,9 +10,9 @@ cancel xkeyval hyperref url listings fancyvrb zapfding
 makecmds epslatex-fr opensans latexmk texliveonfly
 fontaxes csquotes etoolbox
 # For minted
-minted fvextra caption upquote lineno ifplatform
+minted fvextra caption upquote lineno ifplatform xstring
 
-# xstring
+# 
 #geometry luatexbase ctablestack 
 # LuaTeX and XeTeX
 # ucharcat filehook babel-english  
