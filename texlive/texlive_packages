@@ -1,6 +1,6 @@
 # Base dependencies to compile sample2e 
 amsmath amscls amsfonts mathtools thmtools 
-# Install texliveonfly
+# Install texliveonfly latexmk
 graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 imakeidx cancel xkeyval hyperref url listings fancyvrb 
