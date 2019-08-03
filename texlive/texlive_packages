@@ -2,14 +2,17 @@
 amsmath amscls amsfonts mathtools thmtools 
 # Install texliveonfly latexmk
 graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
+# index and bib
+makeindex imakeidx bibtex biber
+#
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
-imakeidx cancel xkeyval hyperref url listings fancyvrb zapfding
-makecmds epslatex-fr opensans makeindex bibtex biber latexmk texliveonfly
-fontaxes csquotes
+cancel xkeyval hyperref url listings fancyvrb zapfding
+makecmds epslatex-fr opensans latexmk texliveonfly
+fontaxes csquotes etoolbox
 
 
 #geometry luatexbase ctablestack 
-# Lua
+# LuaTeX and XeTeX
 # ucharcat filehook babel-english  
 luaotfload lualatex-math lm-math unicode-math
 # polyglossia hyph-utf8 luatex85 ifoddpage mathspec
@@ -19,7 +22,7 @@ luaotfload lualatex-math lm-math unicode-math
 
 #  csquotes exam 
 #biblatex  scalerel
-#stackengine etoolbox listofitems marvosym slantsc
+#stackengine  listofitems marvosym slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
 #  multirow chngcntr fvextra upquote lineno ifplatform
 #xstring framed caption minted pgfgantt geometry beamer translator
