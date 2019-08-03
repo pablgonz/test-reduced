@@ -5,10 +5,13 @@ graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 imakeidx cancel xkeyval hyperref url listings fancyvrb 
 makecmds epslatex-fr opensans makeindex bibtex latexmk texliveonfly
+
+
+
 #geometry luatexbase ctablestack 
 # Lua
-# ucharcat filehook babel-english  lualatex-math
-luaotfload 
+# ucharcat filehook babel-english  
+luaotfload lualatex-math
 #unicode-math polyglossia hyph-utf8 luatex85 ifoddpage mathspec
 
 # Blank and comment lines are ignored
