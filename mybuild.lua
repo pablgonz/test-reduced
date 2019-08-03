@@ -3,7 +3,7 @@
 os.execute("tlmgr install $(cat texlive/texlive_packages | grep -v -e '^[[:space:]]*$' -e '^#')")
 -- Update TeXLive distribution
 -- os.execute("tlmgr update --self --all --no-auto-install")
-os.execute("latexmk -e '$pdflatex=q/pdflatex %O -shell-escape %S/' -pdf minted.tex")
+os.execute("latexmk -e '$pdflatex=q/lualatex %O -shell-escape %S/' -pdf fonts.tex")
 -- Compiling files using latexmk -cd /path/to/file.tex
 --os.execute("latexmk -e '$pdflatex=q/pdflatex %O -interaction=nonstopmode %S/' -pdf -cd src/main.tex")
 --os.execute("latexmk -pdf -cd src/biber-mwe.tex")

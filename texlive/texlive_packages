@@ -1,21 +1,20 @@
 # Base dependencies to compile sample2e 
 amsmath amscls amsfonts mathtools thmtools 
 # Install texliveonfly latexmk
-latexmk texliveonfly
-graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
+latexmk texliveonfly graphics graphics-def oberdiek tools ifluatex ifxetex 
+babel-dutch 
 # index and bib
 makeindex imakeidx bibtex biblatex biber logreq
 # others
-stmaryrd xcolor pdfpages eso-pic pgf pgfplots
-cancel xkeyval hyperref url listings fancyvrb zapfding
-makecmds epslatex-fr opensans 
-fontaxes csquotes etoolbox
+stmaryrd xcolor pdfpages eso-pic pgf pgfplots cancel xkeyval hyperref url 
+listings fancyvrb zapfding makecmds epslatex-fr opensans fontaxes csquotes
+etoolbox
+# For minted
+minted fvextra caption upquote lineno ifplatform xstring framed
 # LuaTeX and XeTeX
 # ucharcat filehook babel-english  
 luaotfload lualatex-math lm-math unicode-math
 
-# For minted
-minted fvextra caption upquote lineno ifplatform xstring framed
 
 # 
 #geometry luatexbase ctablestack 
