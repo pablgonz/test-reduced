@@ -4,9 +4,9 @@ amsmath amscls amsfonts mathtools thmtools
 graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 imakeidx cancel xkeyval hyperref url listings fancyvrb 
-makecmds epslatex-fr texliveonfly
+makecmds epslatex-fr latexmk texliveonfly
 #geometry xcolor luatexbase ctablestack 
-# luaotfload ucharcat filehook babel-english latexmk lualatex-math
+# luaotfload ucharcat filehook babel-english  lualatex-math
 #unicode-math polyglossia hyph-utf8 luatex85 ifoddpage mathspec
 
 # Blank and comment lines are ignored
