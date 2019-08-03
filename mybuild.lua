@@ -1,5 +1,5 @@
 #!/usr/bin/env texlua
--- Add ALL pkgs from list... (only need in firt run)
+-- Add ALL pkgs from list... (only need in firt run) 
 -- os.execute("tlmgr install $(cat texlive/texlive_packages | grep -v -e '^[[:space:]]*$' -e '^#')")
 -- Update TeXLive distribution
 -- os.execute("tlmgr update --self --all --no-auto-install")
