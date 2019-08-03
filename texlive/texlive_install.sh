@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# Originally from https://github.com/latex3/latex3
+
 # This script is used for building LaTeX files using Travis
 # A minimal current TL is installed adding only the packages that are
 # required
@@ -18,10 +20,17 @@ if ! command -v texlua > /dev/null; then
   cd ..
 fi
 
-# l3build, LuaTeX, plain and (Xe|pdf)LaTeX formats .... latex-bin tex xetex
+# Just including texlua so the cache check above works
 tlmgr install luatex 
 
-# PKS
-tlmgr install $(cat texlive/texlive_packages | grep -v -e '^[[:space:]]*$' -e '^#')
+# Then you can add packages in the texlive_packages file
+# We need to change the working directory before including a file
+cd "$(dirname "${BASH_SOURCE[0]}")"
+tlmgr install $(cat texlive_packages | grep -v -e '^[[:space:]]*$' -e '^#')
+cd ..
+
 # Keep no backups (not required, simply makes cache bigger)
 tlmgr option -- autobackup 0
+
+# Update the TL install but add nothing new
+tlmgr update --self --all --no-auto-install
