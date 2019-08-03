@@ -9,6 +9,8 @@ stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 cancel xkeyval hyperref url listings fancyvrb zapfding
 makecmds epslatex-fr opensans latexmk texliveonfly
 fontaxes csquotes etoolbox
+# 
+minted
 
 
 #geometry luatexbase ctablestack 
