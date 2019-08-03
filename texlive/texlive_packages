@@ -3,7 +3,8 @@ amsmath amscls amsfonts mathtools thmtools
 # Install texliveonfly
 graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
-imakeidx cancel xkeyval hyperref url listings texliveonfly
+imakeidx cancel xkeyval hyperref url listings fancyvrb 
+makecmds epslatex-fr texliveonfly
 #geometry xcolor luatexbase ctablestack 
 # luaotfload ucharcat filehook babel-english latexmk lualatex-math
 #unicode-math polyglossia hyph-utf8 luatex85 ifoddpage mathspec
@@ -15,6 +16,6 @@ imakeidx cancel xkeyval hyperref url listings texliveonfly
 #biblatex  scalerel
 #stackengine etoolbox listofitems marvosym opensans slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
-#fancyvrb makecmds multirow chngcntr fvextra upquote lineno ifplatform
+#  multirow chngcntr fvextra upquote lineno ifplatform
 #xstring framed caption minted pgfgantt geometry beamer translator
 #environ trimspaces logreq  fontaxes
