@@ -5,7 +5,7 @@ graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 imakeidx cancel xkeyval hyperref url listings fancyvrb zapfding
 makecmds epslatex-fr opensans makeindex bibtex biber latexmk texliveonfly
-fontaxes csquote 
+fontaxes csquotes
 
 
 #geometry luatexbase ctablestack 
@@ -19,7 +19,7 @@ luaotfload lualatex-math lm-math unicode-math
 
 #  csquotes exam 
 #biblatex  scalerel
-#stackengine etoolbox listofitems marvosym opensans slantsc
+#stackengine etoolbox listofitems marvosym slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
 #  multirow chngcntr fvextra upquote lineno ifplatform
 #xstring framed caption minted pgfgantt geometry beamer translator
