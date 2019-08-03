@@ -10,7 +10,7 @@ cancel xkeyval hyperref url listings fancyvrb zapfding
 makecmds epslatex-fr opensans latexmk texliveonfly
 fontaxes csquotes etoolbox
 # For minted
-minted fvextra caption 
+minted fvextra caption upquote
 
 
 #geometry luatexbase ctablestack 
@@ -26,6 +26,6 @@ luaotfload lualatex-math lm-math unicode-math
 #  scalerel
 #stackengine  listofitems marvosym slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
-#  multirow chngcntr upquote lineno ifplatform
+#  multirow chngcntr  lineno ifplatform
 #xstring framed  pgfgantt geometry beamer translator
 #environ trimspaces 
