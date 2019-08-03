@@ -1,9 +1,9 @@
 # Base dependencies to compile sample2e 
 amsmath amscls amsfonts mathtools thmtools 
 # Install texliveonfly latexmk
-graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
+graphics graphics-def oberdiek tools ifluatex ifxetex ifthen babel-dutch 
 # index and bib
-makeindex imakeidx bibtex biblatex biber
+makeindex imakeidx bibtex biblatex biber logreq
 #
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 cancel xkeyval hyperref url listings fancyvrb zapfding
@@ -20,7 +20,7 @@ luaotfload lualatex-math lm-math unicode-math
 # Blank and comment lines are ignored
 # More depends
 
-#  csquotes exam 
+#  exam 
 #  scalerel
 #stackengine  listofitems marvosym slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
