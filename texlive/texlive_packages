@@ -1,18 +1,20 @@
 # Base dependencies to compile sample2e 
-amsmath amscls amsfonts mathtools thmtools
+amsmath amscls amsfonts mathtools thmtools bm
 # Install texliveonfly
-graphics graphics-def oberdiek tools enumerate ifluatex ifxetex babel-dutch texliveonfly 
-#geometry graphics graphics-def xcolor luatexbase ctablestack  oberdiek  mathtools 
+graphics graphics-def oberdiek tools enumerate ifluatex ifxetex babel-dutch 
+stmaryrd xcolor pdfpages centernot eso-pic pgf pgfplots
+imakeidx cancel xkeyval hyperref bookmark url listings texliveonfly
+#geometry xcolor luatexbase ctablestack 
 # luaotfload ucharcat filehook babel-english latexmk lualatex-math
 #unicode-math polyglossia hyph-utf8 luatex85 ifoddpage mathspec
 
 # Blank and comment lines are ignored
 # More depends
 
-#biber xkeyval csquotes exam thmtools stmaryrd
-#xcolor biblatex pdfpages pgf cancel hyperref pgfplots listings scalerel
+#biber  csquotes exam 
+#biblatex  pgfplots listings scalerel
 #stackengine etoolbox listofitems marvosym amsfonts opensans slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
 #fancyvrb makecmds multirow chngcntr fvextra upquote lineno ifplatform
 #xstring framed caption minted pgfgantt geometry beamer translator
-#environ trimspaces imakeidx logreq url babel-dutch fontaxes
+#environ trimspaces imakeidx logreq  babel-dutch fontaxes
