@@ -19,7 +19,7 @@ if ! command -v texlua > /dev/null; then
 fi
 
 # l3build, LuaTeX, plain and (Xe|pdf)LaTeX formats
-tlmgr install luatex latex-bin tex xetex 
+tlmgr install luatex latex-bin tex xetex
 
 # Keep no backups (not required, simply makes cache bigger)
 tlmgr option -- autobackup 0

@@ -1,13 +1,15 @@
-# Base dependencies oberdiek
-tools 
-#geometry graphics graphics-def xcolor luatexbase ctablestack ifluatex     
+# Base dependencies to compile sample2e 
+amsmath amscls amsfonts
+# Install texliveonfly
+texliveonfly
+#geometry graphics graphics-def xcolor luatexbase ctablestack ifluatex oberdiek  mathtools 
 #ifxetex luaotfload ucharcat filehook babel-english latexmk lualatex-math
 #unicode-math polyglossia hyph-utf8 luatex85 ifoddpage mathspec
 
 # Blank and comment lines are ignored
 # More depends
 
-#biber xkeyval csquotes exam amsmath amscls mathtools thmtools stmaryrd
+#biber xkeyval csquotes exam thmtools stmaryrd
 #xcolor biblatex pdfpages pgf cancel hyperref pgfplots listings scalerel
 #stackengine etoolbox listofitems marvosym amsfonts opensans slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
