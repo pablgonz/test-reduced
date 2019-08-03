@@ -4,20 +4,20 @@ amsmath amscls amsfonts mathtools thmtools
 graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 imakeidx cancel xkeyval hyperref url listings fancyvrb 
-makecmds epslatex-fr opensans makeindex bibtex latexmk texliveonfly
+makecmds epslatex-fr opensans makeindex bibtex biber latexmk texliveonfly
 
 
 
 #geometry luatexbase ctablestack 
 # Lua
 # ucharcat filehook babel-english  
-luaotfload lualatex-math
+luaotfload lualatex-math lm-math
 #unicode-math polyglossia hyph-utf8 luatex85 ifoddpage mathspec
 
 # Blank and comment lines are ignored
 # More depends
 
-#biber  csquotes exam 
+#  csquotes exam 
 #biblatex  scalerel
 #stackengine etoolbox listofitems marvosym opensans slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
