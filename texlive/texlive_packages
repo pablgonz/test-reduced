@@ -1,7 +1,7 @@
 # Base dependencies to compile sample2e 
 amsmath amscls amsfonts mathtools thmtools 
 # Install texliveonfly latexmk
-graphics graphics-def oberdiek tools ifluatex ifxetex ifthen babel-dutch 
+graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
 # index and bib
 makeindex imakeidx bibtex biblatex biber logreq
 #
@@ -26,4 +26,4 @@ luaotfload lualatex-math lm-math unicode-math
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
 #  multirow chngcntr fvextra upquote lineno ifplatform
 #xstring framed caption minted pgfgantt geometry beamer translator
-#environ trimspaces logreq fontaxes
+#environ trimspaces 
