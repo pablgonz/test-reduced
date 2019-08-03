@@ -3,7 +3,7 @@
 os.execute("tlmgr install $(cat texlive/texlive_packages | grep -v -e '^[[:space:]]*$' -e '^#')")
 -- Update TeXLive distribution
 -- os.execute("tlmgr update --self --all --no-auto-install")
-os.execute("latexmk -pdf main.tex")
+os.execute("lualatex -pdf main.tex")
 -- os.execute("dvips sample2e.dvi")
 -- os.execute("ps2pdf sample2e.ps")
 -- Compiling files using latexmk -cd /path/to/file.tex
