@@ -1,8 +1,6 @@
-# Base dependencies to compile sample2e 
-amsmath amscls amsfonts mathtools thmtools 
-# Install texliveonfly latexmk
-latexmk texliveonfly graphics graphics-def oberdiek tools ifluatex ifxetex 
-babel-dutch 
+# Base dependencies and tools to compile
+amsmath amscls amsfonts mathtools thmtools graphics graphics-def oberdiek 
+tools ifluatex ifxetex babel-dutch latexmk texliveonfly 
 # index and bib
 makeindex imakeidx bibtex biblatex biber logreq
 # others
@@ -12,21 +10,4 @@ etoolbox
 # For minted
 minted fvextra caption upquote lineno ifplatform xstring framed
 # LuaTeX and XeTeX
-# ucharcat filehook babel-english  
 luaotfload lualatex-math lm-math unicode-math
-
-
-# 
-#geometry luatexbase ctablestack 
-# polyglossia hyph-utf8 luatex85 ifoddpage mathspec
-
-# Blank and comment lines are ignored
-# More depends
-
-#  exam 
-#  scalerel
-#stackengine  listofitems marvosym slantsc
-#fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
-#  multirow chngcntr  
-#  pgfgantt geometry beamer translator
-#environ trimspaces 
