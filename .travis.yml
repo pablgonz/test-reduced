@@ -1,5 +1,7 @@
 language: generic
 
+dist: xenial
+
 stages:
   - name: latex
     if: commit_message !~ mint and commit_message !~ font and commit_message !~ full and commit_message !~ skip-ci and commit_message !~ ci-skip 
