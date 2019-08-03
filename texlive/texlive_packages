@@ -3,7 +3,7 @@ amsmath amscls amsfonts mathtools thmtools
 # Install texliveonfly latexmk
 graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch 
 # index and bib
-makeindex imakeidx bibtex biber
+makeindex imakeidx bibtex biblatex biber
 #
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 cancel xkeyval hyperref url listings fancyvrb zapfding
@@ -21,7 +21,7 @@ luaotfload lualatex-math lm-math unicode-math
 # More depends
 
 #  csquotes exam 
-#biblatex  scalerel
+#  scalerel
 #stackengine  listofitems marvosym slantsc
 #fancyhdr ulem algorithms algorithmicx float booktabs enumitem polynom
 #  multirow chngcntr fvextra upquote lineno ifplatform
