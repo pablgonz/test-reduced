@@ -1,3 +1,4 @@
+collection-basic collection-latex
 # Base dependencies and tools to compile
 amsmath amscls amsfonts mathtools thmtools graphics graphics-def oberdiek 
 tools ifluatex ifxetex babel-dutch latexmk texliveonfly 
