@@ -5,7 +5,7 @@ graphics graphics-def oberdiek tools ifluatex ifxetex babel-dutch
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots
 imakeidx cancel xkeyval hyperref url listings fancyvrb zapfding
 makecmds epslatex-fr opensans makeindex bibtex biber latexmk texliveonfly
-fontaxes 
+fontaxes csquote 
 
 
 #geometry luatexbase ctablestack 
