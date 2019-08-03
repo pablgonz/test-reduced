@@ -6,7 +6,7 @@ makeindex imakeidx bibtex biblatex biber logreq
 # others
 stmaryrd xcolor pdfpages eso-pic pgf pgfplots cancel xkeyval hyperref url 
 listings fancyvrb zapfding makecmds epslatex-fr opensans fontaxes csquotes
-etoolbox enumitem float
+etoolbox enumitem float booktabs polynom
 # For minted
 minted fvextra caption upquote lineno ifplatform xstring framed
 # LuaTeX and XeTeX
