@@ -18,8 +18,8 @@ if ! command -v texlua > /dev/null; then
   cd ..
 fi
 
-# l3build, LuaTeX, plain and (Xe|pdf)LaTeX formats .... 
-tlmgr install luatex latex-bin tex xetex
+# l3build, LuaTeX, plain and (Xe|pdf)LaTeX formats .... latex-bin tex xetex
+tlmgr install luatex 
 
 # PKS
 tlmgr install $(cat texlive/texlive_packages | grep -v -e '^[[:space:]]*$' -e '^#')
