@@ -1,15 +1,15 @@
+# collection 
 collection-basic 
-# collection-latex
 # Base dependencies and tools to compile
-amsmath amscls amsfonts mathtools thmtools graphics graphics-def oberdiek 
-tools ifluatex ifxetex babel-dutch latexmk texliveonfly 
+mathtools thmtools 
+babel-dutch latexmk texliveonfly 
 # index and bib
-makeindex imakeidx bibtex biblatex biber logreq
+imakeidx biblatex biber logreq
 # others
-stmaryrd xcolor pdfpages eso-pic pgf pgfplots cancel xkeyval hyperref url 
+stmaryrd xcolor pdfpages eso-pic pgf pgfplots cancel xkeyval 
 listings fancyvrb zapfding makecmds epslatex-fr opensans fontaxes csquotes
-etoolbox enumitem float booktabs polynom multirow marvosym ulem geometry algorithms algorithmicx chngcntr
+etoolbox enumitem float booktabs polynom multirow marvosym ulem algorithms algorithmicx chngcntr
 # For minted
-minted fvextra caption upquote lineno ifplatform xstring framed
+minted fvextra caption upquote lineno xstring framed
 # LuaTeX and XeTeX
 luaotfload lualatex-math lm-math unicode-math
