@@ -25,4 +25,4 @@ tlmgr install luatex latex-bin tex xetex
 tlmgr option -- autobackup 0
 
 # Update the TL install base but add nothing new
-tlmgr update --self --all --no-auto-install
+# tlmgr update --self --all --no-auto-install
