@@ -13,7 +13,6 @@ install:
   - source ./texlive/texlive_install.sh
 
 cache:
-  apt: true
   directories:
     - /tmp/texlive
     - $HOME/.texlive
