@@ -5,6 +5,12 @@ dist: bionic
 # sudo: false
 sudo: required
 
+cache:
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
+    - $HOME/.debpkgs
+
 #addons:
   #apt:
     #packages:
@@ -20,12 +26,6 @@ before_install:
 
 install:
   - source ./texlive/texlive_install.sh
-
-cache:
-  directories:
-    - /tmp/texlive
-    - $HOME/.texlive
-    - $HOME/.debpkgs
 
 # Change working directory so including files will work
 
@@ -50,7 +50,7 @@ before_script:
   - echo "Start to install software"
   - sudo apt-get install -y --no-install-recommends --no-install-suggests python-pygments ghostscript
   - echo "Start updating the cache"
-  - cp /var/cache/apt/archives/*deb ~/$HOME/.debpkgs/
+  - cp /var/cache/apt/archives/*deb ~/.debpkgs/
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
