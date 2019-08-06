@@ -30,12 +30,12 @@ cache:
 before_script: cd $TRAVIS_BUILD_DIR/src/
 script:
   # Texliveonfly will download packages automatically
-  - texliveonfly main.tex
+  #- texliveonfly main.tex
   # You can use latexmk to automatically handle bibtex and references (recommended)
   #- latexmk -pdf main.tex
-  - texliveonfly biber-mwe.tex
-  - texliveonfly fonts.tex --compiler=lualatex
-  - texliveonfly --arguments='-shell-escape' ./minted.tex
+  #- texliveonfly biber-mwe.tex
+  #- texliveonfly fonts.tex --compiler=lualatex
+  - texliveonfly --arguments='-shell-escape' minted.tex
 
   # But you could use any other compiler as well instead of latexmk. Example:
 #  - pdflatex main.tex
