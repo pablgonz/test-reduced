@@ -2,6 +2,11 @@ language: minimal
 
 dist: bionic
 
+addons:
+  apt:
+    packages:
+      - python-pygments
+
 #addons:
 #    apt_packages:
 #        - python-pygments
