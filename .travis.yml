@@ -25,7 +25,7 @@ install:
   - source ./texlive/texlive_install.sh
 
 before_script:
-  - pip3 install pygments
+  #- pip3 install pygments
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
