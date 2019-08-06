@@ -10,7 +10,6 @@ cache:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
-    - $HOME/.debpkgs
 
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
@@ -22,7 +21,7 @@ install:
   - source ./texlive/texlive_install.sh
 
 before_script:
-  - pip -v install pygments
+  - pip install Pygments
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
