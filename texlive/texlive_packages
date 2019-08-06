@@ -3,7 +3,7 @@
 # Or better, check https://www.ctan.org/pkg/some-package to see in which TeX Live package it is contained.
 # Or use $ tlmgr info some-package
 # Base dependencies and tools to compile
-# mathtools thmtools babel-dutch latexmk texliveonfly 
+mathtools thmtools babel-dutch latexmk texliveonfly 
 # index and bib
 # imakeidx biblatex biber logreq
 # others
