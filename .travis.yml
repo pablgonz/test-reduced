@@ -21,8 +21,8 @@ install:
   - source ./texlive/texlive_install.sh
 
 before_script:
-  - echo "Print content of $HOME/.debpkgs"
-  - ls $HOME/.debpkgs
+  - echo "Print content of ~/.debpkgs"
+  - ls ~/.debpkgs
   - echo "Check whether apt-get has no cache"
   - ls /var/cache/apt/archives
   -
