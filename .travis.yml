@@ -22,7 +22,6 @@ install:
   - source ./texlive/texlive_install.sh
 
 cache:
-  apt: true
   directories:
     - /tmp/texlive
     - $HOME/.texlive
@@ -52,8 +51,9 @@ before_script:
   - sudo apt-get install -y --no-install-recommends --no-install-suggests python-pygments ghostscript
   - echo "Start updating the cache"
   - cp /var/cache/apt/archives/*deb ~/$HOME/.debpkgs/
+  - cd $TRAVIS_BUILD_DIR/src/
 
-before_script: cd $TRAVIS_BUILD_DIR/src/
+#before_script: cd $TRAVIS_BUILD_DIR/src/
 script:
   # Texliveonfly will download packages automatically
   #- texliveonfly main.tex
