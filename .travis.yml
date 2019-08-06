@@ -6,6 +6,7 @@ dist: bionic
 sudo: required
 
 cache:
+  pip:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
