@@ -6,6 +6,7 @@ addons:
   apt:
     packages:
       - python-pygments
+      - ghostscript
 
 #addons:
 #    apt_packages:

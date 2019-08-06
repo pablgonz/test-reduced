@@ -7,10 +7,10 @@ mathtools thmtools babel-dutch latexmk texliveonfly
 # index and bib
 # imakeidx biblatex biber logreq
 # others
-# stmaryrd xcolor pdfpages eso-pic pgf pgfplots cancel xkeyval 
-# listings fancyvrb zapfding makecmds epslatex-fr opensans fontaxes csquotes
-# etoolbox enumitem float booktabs polynom multirow marvosym ulem algorithms 
-# algorithmicx chngcntr
+ stmaryrd xcolor pdfpages eso-pic pgf pgfplots cancel xkeyval 
+ listings fancyvrb zapfding makecmds epslatex-fr opensans fontaxes csquotes
+ etoolbox enumitem float booktabs polynom multirow marvosym ulem algorithms 
+ algorithmicx chngcntr
 # For minted
 minted fvextra caption upquote lineno xstring framed
 # LuaTeX and XeTeX
