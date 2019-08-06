@@ -11,23 +11,14 @@ cache:
     - $HOME/.texlive
     - $HOME/.debpkgs
 
-#addons:
-  #apt:
-    #packages:
-      #- python-pygments
-      #- ghostscript
-
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
- #- mkdir $HOME/.debpkgs
  - mkdir $HOME/.fonts
  - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
  - fc-cache -f -v
 
 install:
   - source ./texlive/texlive_install.sh
-
-# Change working directory so including files will work
 
 before_script:
   - echo "Print content of $HOME/.debpkgs"
@@ -41,9 +32,9 @@ before_script:
         [ -e "$1" ]
     }
   - |
-    if exist ~/$HOME/.debpkgs/*.deb
+    if exist ~/.debpkgs/*.deb
     then
-        sudo mv ~/$HOME/.debpkgs/*.deb /var/cache/apt/archives/
+        sudo mv ~/.debpkgs/*.deb /var/cache/apt/archives/
         ls /var/cache/apt/archives
     fi
   -
