@@ -2,9 +2,13 @@ language: minimal
 
 dist: bionic
 
-# sudo: false
-sudo: required
+sudo: false
+#sudo: required
 
+addons:
+  apt:
+    packages:
+      - python-pygments
 cache:
   pip:
   directories:
@@ -21,7 +25,6 @@ install:
   - source ./texlive/texlive_install.sh
 
 before_script:
-  - pip install pygmentize
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
