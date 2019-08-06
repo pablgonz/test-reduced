@@ -13,7 +13,7 @@ addons:
 
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
- - sudo apt-get install python3-pygments
+ #- sudo apt-get install python3-pygments
  - mkdir $HOME/.fonts
  - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
  - fc-cache -f -v
