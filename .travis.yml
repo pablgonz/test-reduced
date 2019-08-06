@@ -8,12 +8,15 @@ before_install:
  - mkdir $HOME/.fonts
  - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
  - fc-cache -f -v
+
 install:
   - source ./texlive/texlive_install.sh
+
 cache:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
+
 # Change working directory so including files will work
 before_script: cd $TRAVIS_BUILD_DIR/src/
 script:
