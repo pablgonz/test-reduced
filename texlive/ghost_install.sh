@@ -2,7 +2,9 @@
 if ! command -v gs > /dev/null; then
   wget https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs927/ghostscript-9.27-linux-x86_64.tgz
   tar -xzf ghostscript-9.27-linux-x86_64.tgz
-  pwd
+  echo "Start to install software"
+  ls
+  echo pwd
   cd $HOME/ghostscript-9.27-li
   ./configure --prefix=~/gs
   make 
