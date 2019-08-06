@@ -5,7 +5,8 @@ if ! command -v gs > /dev/null; then
   echo "Start to install software"
   ls
   pwd
-  ghostscript-9.27-linux-x86_64
+  cd ghostscript-9.27-linux-x86_64
+  ls
   ./configure --prefix=~/gs
   make 
   make install
