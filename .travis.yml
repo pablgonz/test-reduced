@@ -4,13 +4,6 @@ dist: bionic
 
 sudo: false
 
-cache:
-  - python-pygments
-  - ghostscript
-  directories:
-    - /tmp/texlive
-    - $HOME/.texlive
-
 addons:
   apt:
     packages:
@@ -25,6 +18,13 @@ before_install:
 
 install:
   - source ./texlive/texlive_install.sh
+
+cache:
+  - python-pygments
+  - ghostscript
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
 
 # Change working directory so including files will work
 before_script: cd $TRAVIS_BUILD_DIR/src/
