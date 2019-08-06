@@ -25,8 +25,38 @@ cache:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
+    - $HOME/.debpkgs
 
 # Change working directory so including files will work
+
+before_script:
+  - echo "Print content of $HOME/.debpkgs"
+  - ls $HOME/.debpkgs
+  - echo "Check whether apt-get has no cache"
+  - ls /var/cache/apt/archives
+  -
+  - echo "Start loading cache"
+  - |
+    exist() {
+        [ -e "$1" ]
+    }
+  - |
+    if exist ~/$HOME/.debpkgs/*.deb
+    then
+        sudo mv ~/$HOME/.debpkgs/*.deb /var/cache/apt/archives/
+        ls /var/cache/apt/archives
+    fi
+  -
+  - echo "Start to install software"
+  - sudo apt-get install -y --no-install-recommends --no-install-suggests python-pygments ghostscript
+  -
+  - echo "Start updating the cache"
+  - cp /var/cache/apt/archives/*deb ~/$HOME/.debpkgs/
+
+
+
+
+
 before_script: cd $TRAVIS_BUILD_DIR/src/
 script:
   # Texliveonfly will download packages automatically
