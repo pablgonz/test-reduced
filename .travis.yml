@@ -10,10 +10,10 @@ addons:
     packages:
       - python-pygments
 cache:
-  pip:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
+    - $HOME/gs
 
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
