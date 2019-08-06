@@ -6,5 +6,5 @@ if ! command -v gs > /dev/null; then
   ./configure --prefix=~/gs
   make 
   make install
-  cd ..
+  cd $TRAVIS_BUILD_DIR
 fi
