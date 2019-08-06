@@ -23,6 +23,7 @@ before_install:
  - fc-cache -f -v
 
 install:
+  - source ./texlive/ghost_install.sh
   - source ./texlive/texlive_install.sh
 
 before_script:
