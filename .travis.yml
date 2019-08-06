@@ -5,11 +5,11 @@ dist: bionic
 # sudo: false
 sudo: required
 
-addons:
-  apt:
-    packages:
-      - python-pygments
-      - ghostscript
+#addons:
+  #apt:
+    #packages:
+      #- python-pygments
+      #- ghostscript
 
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
@@ -50,7 +50,6 @@ before_script:
   -
   - echo "Start to install software"
   - sudo apt-get install -y --no-install-recommends --no-install-suggests python-pygments ghostscript
-  -
   - echo "Start updating the cache"
   - cp /var/cache/apt/archives/*deb ~/$HOME/.debpkgs/
 
