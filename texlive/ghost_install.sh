@@ -4,8 +4,8 @@ if ! command -v gs > /dev/null; then
   tar -xzf ghostscript-9.27-linux-x86_64.tgz
   echo "Start to install software"
   ls
-  echo pwd
-  cd $HOME/ghostscript-9.27-li
+  pwd
+  cd $HOME/ghostscript-9.27-linux-x86_64
   ./configure --prefix=~/gs
   make 
   make install
