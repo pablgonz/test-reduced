@@ -28,7 +28,7 @@ install:
   - source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
-  - pip install Pygments -qq
+  - sudo pip install Pygments -qq
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
