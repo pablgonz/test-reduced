@@ -18,14 +18,14 @@ cache:
 
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
- #- sudo apt-get install python-pygments
+ - sudo apt-get install python-pygments
  - mkdir $HOME/.fonts
  - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
  - fc-cache -f -v
 
 install:
-  - sudo pip install Pygments -qq
-  - source ./texlive/ghost_install.sh
+  #- sudo pip install Pygments -qq
+  #- source ./texlive/ghost_install.sh
   - source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
