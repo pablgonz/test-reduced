@@ -1,5 +1,4 @@
-#language: minimal
-language: python
+language: minimal
 
 dist: bionic
 
@@ -11,6 +10,7 @@ dist: bionic
     #packages:
       #- python-pygments
 cache:
+  pip:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
