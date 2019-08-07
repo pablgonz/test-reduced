@@ -1,4 +1,5 @@
-language: minimal
+#language: minimal
+language: python
 
 dist: bionic
 
@@ -17,7 +18,7 @@ cache:
 
 ## Uncomment the following lines if you use minted package or custom fonts
 before_install:
- - sudo apt-get install python-pygments
+ #- sudo apt-get install python-pygments
  - mkdir $HOME/.fonts
  - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
  - fc-cache -f -v
@@ -25,9 +26,9 @@ before_install:
 install:
   - source ./texlive/ghost_install.sh
   - source ./texlive/texlive_install.sh
-
+#pip install collective.checkdocs Pygments
 before_script:
-  #- pip3 install pygments
+  - pip install Pygments -qq
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
