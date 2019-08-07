@@ -24,11 +24,11 @@ before_install:
  - fc-cache -f -v
 
 install:
+  - sudo pip install Pygments -qq
   - source ./texlive/ghost_install.sh
   - source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
-  - sudo pip install Pygments -qq
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
