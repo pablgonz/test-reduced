@@ -39,7 +39,7 @@ before_script:
   #- mkdir $HOME/.fonts
   #- cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
   #- fc-cache -f -v
-  - tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' texlive/texlive_packages)
+  - tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' $TRAVIS_BUILD_DIR/texlive/texlive_packages)
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
