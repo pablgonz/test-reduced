@@ -29,9 +29,9 @@ cache:
 
 install: skip
 
-#install:
+install:
   #- sudo pip install Pygments -qq
-  # - source ./texlive/texlive_install.sh
+  - source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
   - sudo apt-get install python-pygments
@@ -40,6 +40,7 @@ before_script:
   #- fc-cache -f -v
   - export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
   - tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' $TRAVIS_BUILD_DIR/texlive/texlive_packages)
+  - tlmgr update --self --all --no-auto-install
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
