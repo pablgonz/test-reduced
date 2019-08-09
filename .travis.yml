@@ -41,7 +41,7 @@ script:
   # Texliveonfly will download packages automatically
   #- texliveonfly main.tex
   # You can use latexmk to automatically handle bibtex and references (recommended)
-  - latexmk -pdf main.tex
+  - texliveonfly -pdf main.tex
   #- texliveonfly biber-mwe.tex
   #- texliveonfly fonts.tex --compiler=lualatex
   #- texliveonfly --arguments='-shell-escape' minted.tex
