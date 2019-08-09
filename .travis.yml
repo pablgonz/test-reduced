@@ -31,11 +31,10 @@ install: skip
 
 #install:
   #- sudo pip install Pygments -qq
-  #- source ./texlive/ghost_install.sh
   # - source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
-  #- sudo apt-get install python-pygments
+  - sudo apt-get install python-pygments
   #- mkdir $HOME/.fonts
   #- cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
   #- fc-cache -f -v
