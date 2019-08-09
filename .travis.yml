@@ -19,21 +19,27 @@ cache:
   directories:
     - /tmp/texlive
     - $HOME/.texlive
-    - $HOME/gs
 
 ## Uncomment the following lines if you use minted package or custom fonts
-before_install:
- - sudo apt-get install python-pygments
- - mkdir $HOME/.fonts
- - cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
- - fc-cache -f -v
+#before_install:
+ #- sudo apt-get install python-pygments
+ #- mkdir $HOME/.fonts
+ #- cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
+ #- fc-cache -f -v
 
-install:
+install: skip
+
+#install:
   #- sudo pip install Pygments -qq
   #- source ./texlive/ghost_install.sh
-  - source ./texlive/texlive_install.sh
+  # - source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
+  #- sudo apt-get install python-pygments
+  #- mkdir $HOME/.fonts
+  #- cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
+  #- fc-cache -f -v
+  - tlmgr install $(sed 's/\s*#.*//;/^\s*$/d' texlive/texlive_packages)
   - cd $TRAVIS_BUILD_DIR/src/
 
 #before_script: cd $TRAVIS_BUILD_DIR/src/
