@@ -9,6 +9,11 @@ dist: bionic
   #apt:
     #packages:
       #- python-pygments
+git:
+  depth: false
+  submodules: false
+  quiet: true
+
 cache:
   pip:
   directories:
