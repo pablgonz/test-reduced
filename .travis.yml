@@ -20,21 +20,14 @@ cache:
     - /tmp/texlive
     - $HOME/.texlive
 
-## Uncomment the following lines if you use minted package or custom fonts
-#before_install:
- #- sudo apt-get install python-pygments
- #- mkdir $HOME/.fonts
- #- cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
- #- fc-cache -f -v
-
 install: skip
 
-install:
+#install:
   #- sudo pip install Pygments -qq
   #- source ./texlive/texlive_install.sh
-#pip install collective.checkdocs Pygments
+
 before_script:
-  - sudo apt-get install python-pygments
+  #- sudo apt-get install python-pygments
   #- mkdir $HOME/.fonts
   #- cp -a $TRAVIS_BUILD_DIR/src/fonts/. $HOME/.fonts/
   #- fc-cache -f -v
@@ -48,10 +41,10 @@ script:
   # Texliveonfly will download packages automatically
   #- texliveonfly main.tex
   # You can use latexmk to automatically handle bibtex and references (recommended)
-  #- latexmk -pdf main.tex
+  - latexmk -pdf main.tex
   #- texliveonfly biber-mwe.tex
   #- texliveonfly fonts.tex --compiler=lualatex
-  - texliveonfly --arguments='-shell-escape' minted.tex
+  #- texliveonfly --arguments='-shell-escape' minted.tex
 
   # But you could use any other compiler as well instead of latexmk. Example:
 #  - pdflatex main.tex
