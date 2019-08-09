@@ -31,7 +31,7 @@ install: skip
 
 install:
   #- sudo pip install Pygments -qq
-  - source ./texlive/texlive_install.sh
+  #- source ./texlive/texlive_install.sh
 #pip install collective.checkdocs Pygments
 before_script:
   - sudo apt-get install python-pygments
